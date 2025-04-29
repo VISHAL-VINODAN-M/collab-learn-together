@@ -21,20 +21,20 @@ const NavigationBar: React.FC = () => {
     <header className="w-full bg-white shadow-sm border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <Book className="h-6 w-6 text-brand-purple" />
-          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-purple to-brand-blue">
+          <Book className="h-6 w-6 text-black" />
+          <span className="text-xl font-bold text-black">
             Class Collab
           </span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/subjects" className="text-gray-700 hover:text-brand-purple transition-colors">
+          <Link to="/subjects" className="text-gray-700 hover:text-black transition-colors">
             Subjects
           </Link>
-          <Link to="/study-sessions" className="text-gray-700 hover:text-brand-purple transition-colors">
+          <Link to="/study-sessions" className="text-gray-700 hover:text-black transition-colors">
             Study Sessions
           </Link>
-          <Link to="/resources" className="text-gray-700 hover:text-brand-purple transition-colors">
+          <Link to="/resources" className="text-gray-700 hover:text-black transition-colors">
             Resources
           </Link>
         </nav>
@@ -46,7 +46,7 @@ const NavigationBar: React.FC = () => {
                 <Button variant="ghost" className="rounded-full p-0 h-10 w-10">
                   <Avatar>
                     <AvatarImage src={currentUser?.avatarUrl} alt={currentUser?.name} />
-                    <AvatarFallback className="bg-brand-purple text-white">
+                    <AvatarFallback className="bg-black text-white">
                       {currentUser?.name.substring(0, 2).toUpperCase()}
                     </AvatarFallback>
                   </Avatar>
@@ -80,7 +80,7 @@ const NavigationBar: React.FC = () => {
                 <Button variant="ghost">Login</Button>
               </Link>
               <Link to="/register">
-                <Button className="bg-brand-purple hover:bg-brand-deep-purple">Sign Up</Button>
+                <Button className="bg-black hover:bg-gray-800 text-white">Sign Up</Button>
               </Link>
             </div>
           )}

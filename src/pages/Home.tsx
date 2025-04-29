@@ -10,28 +10,28 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card';
-import { Book, Calendar, Users, Video } from 'lucide-react';
+import { Book, FileText, GraduationCap, School } from 'lucide-react';
 import MainLayout from '@/layouts/MainLayout';
 import { useAuth } from '@/context/AuthContext';
 
 const features = [
   { 
-    icon: <Book className="h-10 w-10 text-brand-purple" />, 
+    icon: <Book className="h-10 w-10 text-black" />, 
     title: 'Curated Learning Material', 
     description: 'Access organized and structured content for various subjects.' 
   },
   { 
-    icon: <Video className="h-10 w-10 text-brand-purple" />, 
+    icon: <FileText className="h-10 w-10 text-black" />, 
     title: 'Live Group Study Sessions', 
     description: 'Join or create real-time video study groups with fellow students.' 
   },
   { 
-    icon: <Users className="h-10 w-10 text-brand-purple" />, 
+    icon: <School className="h-10 w-10 text-black" />, 
     title: 'Collaborative Learning', 
     description: 'Learn together, share insights, and improve understanding through discussion.' 
   },
   { 
-    icon: <Calendar className="h-10 w-10 text-brand-purple" />, 
+    icon: <GraduationCap className="h-10 w-10 text-black" />, 
     title: 'Progress Tracking', 
     description: 'Monitor your learning journey and track accomplishments over time.' 
   },
@@ -41,21 +41,21 @@ const popularSubjects = [
   { 
     id: '1', 
     name: 'Java Programming', 
-    imageUrl: 'https://i.pravatar.cc/300?img=1', 
+    imageUrl: 'https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1000&q=80', 
     enrolledCount: 1200,
     difficulty: 'intermediate' as const
   },
   { 
     id: '2', 
     name: 'Web Development', 
-    imageUrl: 'https://i.pravatar.cc/300?img=2', 
+    imageUrl: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1000&q=80', 
     enrolledCount: 1500,
     difficulty: 'beginner' as const
   },
   { 
     id: '3', 
     name: 'Data Structures', 
-    imageUrl: 'https://i.pravatar.cc/300?img=3', 
+    imageUrl: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=1000&q=80', 
     enrolledCount: 980,
     difficulty: 'advanced' as const
   },
@@ -67,7 +67,7 @@ const Home: React.FC = () => {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-brand-purple to-brand-blue text-white py-20">
+      <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fadeIn">
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to={isAuthenticated ? "/subjects" : "/register"}>
-                <Button size="lg" className="bg-white text-brand-purple hover:bg-gray-100 hover:text-brand-deep-purple">
+                <Button size="lg" className="bg-white text-black hover:bg-gray-100 hover:text-gray-800">
                   {isAuthenticated ? 'Explore Subjects' : 'Join Now'}
                 </Button>
               </Link>
@@ -92,8 +92,8 @@ const Home: React.FC = () => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img 
-              src="https://i.pravatar.cc/500" 
-              alt="Students collaborating" 
+              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1000&q=80" 
+              alt="Students studying" 
               className="max-w-full md:max-w-md rounded-lg shadow-lg animate-fadeIn"
             />
           </div>
@@ -104,7 +104,7 @@ const Home: React.FC = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Why Choose <span className="text-brand-purple">Class Collab</span>?
+            Why Choose <span className="text-black">Class Collab</span>?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
@@ -166,14 +166,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-brand-purple text-white">
+      <section className="py-16 bg-black text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Learning?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join thousands of students already enhancing their education through collaborative learning.
           </p>
           <Link to={isAuthenticated ? "/subjects" : "/register"}>
-            <Button size="lg" className="bg-white text-brand-purple hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-black hover:bg-gray-100">
               {isAuthenticated ? 'Explore Subjects' : 'Get Started Today'}
             </Button>
           </Link>
