@@ -13,6 +13,7 @@ import Subjects from "./pages/Subjects";
 import SubjectDetail from "./pages/SubjectDetail";
 import StudySessions from "./pages/StudySessions";
 import StudySession from "./pages/StudySession";
+import CreateSession from "./pages/CreateSession";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/subjects/:id" element={<SubjectDetail />} />
             <Route path="/study-sessions" element={<StudySessions />} />
             <Route path="/study-sessions/:id" element={<StudySession />} />
+            <Route path="/create-session" element={<CreateSession />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
