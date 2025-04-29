@@ -13,6 +13,7 @@ import Subjects from "./pages/Subjects";
 import SubjectDetail from "./pages/SubjectDetail";
 import StudySessions from "./pages/StudySessions";
 import StudySession from "./pages/StudySession";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/subjects/:id" element={<SubjectDetail />} />
             <Route path="/study-sessions" element={<StudySessions />} />
             <Route path="/study-sessions/:id" element={<StudySession />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
