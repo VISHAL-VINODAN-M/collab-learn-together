@@ -6,7 +6,7 @@ export const mockSubjects: Subject[] = [
     id: "1",
     name: "Java Programming",
     description: "Learn the fundamentals of Java programming language, from basic syntax to advanced concepts like multithreading and collections.",
-    imageUrl: "https://i.pravatar.cc/600?img=1",
+    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     category: "Programming",
     difficulty: "intermediate",
     enrolledCount: 1245
@@ -15,7 +15,7 @@ export const mockSubjects: Subject[] = [
     id: "2",
     name: "Web Development",
     description: "Master HTML, CSS, JavaScript and popular frameworks to build responsive and interactive websites.",
-    imageUrl: "https://i.pravatar.cc/600?img=2",
+    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     category: "Programming",
     difficulty: "beginner",
     enrolledCount: 1589
@@ -24,7 +24,7 @@ export const mockSubjects: Subject[] = [
     id: "3",
     name: "Data Structures",
     description: "Understand fundamental data structures like arrays, linked lists, trees, and graphs along with their implementations.",
-    imageUrl: "https://i.pravatar.cc/600?img=3",
+    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     category: "Computer Science",
     difficulty: "advanced",
     enrolledCount: 987
@@ -33,7 +33,7 @@ export const mockSubjects: Subject[] = [
     id: "4",
     name: "Machine Learning",
     description: "Explore the principles behind machine learning algorithms and their applications in solving real-world problems.",
-    imageUrl: "https://i.pravatar.cc/600?img=4",
+    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     category: "Data Science",
     difficulty: "advanced",
     enrolledCount: 756
@@ -42,7 +42,7 @@ export const mockSubjects: Subject[] = [
     id: "5",
     name: "Mobile App Development",
     description: "Learn to build native mobile applications for iOS and Android platforms using modern frameworks.",
-    imageUrl: "https://i.pravatar.cc/600?img=5",
+    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     category: "Programming",
     difficulty: "intermediate",
     enrolledCount: 1023
@@ -51,7 +51,7 @@ export const mockSubjects: Subject[] = [
     id: "6",
     name: "Database Systems",
     description: "Master relational database concepts, SQL, and database management systems like MySQL and PostgreSQL.",
-    imageUrl: "https://i.pravatar.cc/600?img=6",
+    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     category: "Computer Science",
     difficulty: "intermediate",
     enrolledCount: 842
@@ -67,7 +67,7 @@ export const mockMaterials: { [key: string]: Material[] } = {
       description: "Basic concepts of Java programming language",
       type: "article",
       contentUrl: "#",
-      thumbnailUrl: "https://i.pravatar.cc/300?img=11",
+      thumbnailUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
       createdAt: new Date("2023-01-15")
     },
     {
@@ -77,7 +77,7 @@ export const mockMaterials: { [key: string]: Material[] } = {
       description: "Learn about classes, objects, inheritance, polymorphism, and more",
       type: "video",
       contentUrl: "#",
-      thumbnailUrl: "https://i.pravatar.cc/300?img=12",
+      thumbnailUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
       createdAt: new Date("2023-01-18")
     },
     {
@@ -87,7 +87,7 @@ export const mockMaterials: { [key: string]: Material[] } = {
       description: "Explore Lists, Sets, Maps, and other collection types",
       type: "article",
       contentUrl: "#",
-      thumbnailUrl: "https://i.pravatar.cc/300?img=13",
+      thumbnailUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
       createdAt: new Date("2023-01-22")
     }
   ],
@@ -99,7 +99,7 @@ export const mockMaterials: { [key: string]: Material[] } = {
       description: "Core concepts of web markup and styling",
       type: "article",
       contentUrl: "#",
-      thumbnailUrl: "https://i.pravatar.cc/300?img=21",
+      thumbnailUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
       createdAt: new Date("2023-02-05")
     },
     {
@@ -109,7 +109,7 @@ export const mockMaterials: { [key: string]: Material[] } = {
       description: "Learn the basics of JavaScript programming",
       type: "video",
       contentUrl: "#",
-      thumbnailUrl: "https://i.pravatar.cc/300?img=22",
+      thumbnailUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
       createdAt: new Date("2023-02-10")
     }
   ],
@@ -121,7 +121,7 @@ export const mockMaterials: { [key: string]: Material[] } = {
       description: "Understanding fundamental data structures",
       type: "article",
       contentUrl: "#",
-      thumbnailUrl: "https://i.pravatar.cc/300?img=31",
+      thumbnailUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
       createdAt: new Date("2023-03-01")
     },
     {
@@ -131,7 +131,7 @@ export const mockMaterials: { [key: string]: Material[] } = {
       description: "Advanced data structures for complex problems",
       type: "video",
       contentUrl: "#",
-      thumbnailUrl: "https://i.pravatar.cc/300?img=32",
+      thumbnailUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
       createdAt: new Date("2023-03-08")
     }
   ]
